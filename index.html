@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav=wrapper purple darken-4">
+        <div class="container">
+          <a href="#" class="brand-logo center">Travel Planner</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="search-section" class="section">
+        <div class="input-field">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter a place...!"
+          />
+          <button id="search-button" class="btn purple darken-4">Search</button>
+        </div>
+      </section>
+      <section id="results-section">
+        <div id="place-details" class="section"></div>
+        <div id="map-container" class="section">
+          <div id="map"></div>
+          <img
+            id="fallback-image"
+            src=" https://www.minitool.com/images/uploads/2018/08/location-is-not-available-thumbnail.jpg"
+            alt="Location Not available"
+            style="display: none"
+          />
+        </div>
+        <div id="photos" class="section"></div>
+      </section>
+    </main>
+    <footer class="page-footer purple darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center-align">
+            <p>
+              <a href="https://youtube.com/@code-with-Bharadwaj" target="_blank"
+                >Code With Bharadwaj</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="index.js"></script>
+</html>
